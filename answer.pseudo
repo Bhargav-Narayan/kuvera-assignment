@@ -1,0 +1,13 @@
+var person = "Bhargav"; // Name stored in person variable
+nameNumber(person); // Calling nameNumber function 
+
+// Function that takes name as a parameter and print that name along with a random number generated.
+function nameNumber(name) {  
+	var number = randomNumber(6, 15); // Calling random number generation function.
+	console.log(name + " " + number); // Displaying the output
+}
+
+// Function that generates a random number
+function randomNumber(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min); // algorithm to generate a random number within a definite range
+}
